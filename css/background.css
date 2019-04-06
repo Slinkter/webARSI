@@ -1,0 +1,8 @@
+.fondo_4{
+
+    background: linear-gradient(to right, #e85441 , #7c5290 100%);
+
+}
+html{
+    scroll-behavior: smooth;
+}
