@@ -1,6 +1,6 @@
 // Navbar
 
-$(window).scroll(function() {
+$(window).scroll(function () {
 
     var scroll = $(window).scrollTop();
 
@@ -22,4 +22,3 @@ $(window).scroll(function() {
     }
 
 });
-
