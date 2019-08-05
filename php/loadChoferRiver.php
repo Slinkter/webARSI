@@ -1,23 +1,23 @@
 <?php
 require "connect.php";
 $query = "SELECT * FROM choferRiver ; ";
-$id = 'id';
-$firstname = 'nameChofer';
-$lastname = 'lastChofer';
-$dni = 'dniChofer';
-$correo = 'brevete';
-$numphone = 'numphone'; 
+$a = 'id';
+$b = 'nameChofer';
+$c = 'lastChofer';
+$d = 'dniChofer';
+$o = 'brevete';
+$f = 'numphone'; 
 if(mysqli_query($conn,$query)){
 
     $query_run = mysqli_query($conn,$query);
     while($row = mysqli_fetch_array($query_run)){
 
-        $response[$firstname] = $row[1];
-        $response[$lastname]= $row[2];
-        $response[$dni] = $row[3];
-        $response[$correo]= $row[4];
-        $response[$numphone]= $row[5];
-        $List[]=$response;
+        $response[$b] = $row[1];
+        $response[$c] = $row[2];
+        $response[$d] = $row[3];
+        $response[$e] = $row[4];
+        $response[$f] = $row[5];
+        $List[] = $response;
     }  
     
 }else {
