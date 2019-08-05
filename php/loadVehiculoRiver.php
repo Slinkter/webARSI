@@ -23,7 +23,6 @@ if(mysqli_query($conn,$query)){
     $response['success'] = false;
     $response['message']= "Failure!";
  }
-
 echo json_encode($List);
 mysql_close($conn);
 ?>

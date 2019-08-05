@@ -1,14 +1,13 @@
 <?php
 require "connect.php";
 $query = "SELECT * FROM choferRiver ; ";
+$id = 'id';
+$firstname = 'nameChofer';
+$lastname = 'lastChofer';
+$dni = 'dniChofer';
+$correo = 'brevete';
+$numphone = 'numphone'; 
 if(mysqli_query($conn,$query)){
-
-    $id = 'id';
-    $firstname = 'nameChofer';
-    $lastname = 'lastChofer';
-    $dni = 'dniChofer';
-    $correo = 'brevete';
-    $numphone = 'numphone'; 
 
     $query_run = mysqli_query($conn,$query);
     while($row = mysqli_fetch_array($query_run)){

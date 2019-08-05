@@ -4,6 +4,7 @@ $a = $_GET["nombreVehiculo"];
 $b = $_GET["marcaVehiculo"];
 $c = $_GET["matriculaVehiculo"];
 $d = $_GET["placaVehiculo"];
+
 $query = "INSERT INTO `vehiculoRiver` ( `nombreVehiculo`, `marcaVehiculo`, `matriculaVehiculo`, `placaVehiculo`) VALUES ('$a','$b','$c','$d');";
 
 if(mysqli_query($conn,$query)){
