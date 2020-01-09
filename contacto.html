@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Contacto</title>
+    <meta name="description" content=" Envianos un mensaje para atender cualquier consulta ">
+    <link rel="icon" href="./img/logo3.png">
+    <!-- ============================================================================================================= -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/replacer.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/tipografia.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!-- ============================================================================================================= -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i">
+</head>
+
+<body>
+    <!-- NAV  -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand p-0" href="index.html" target="_blank">
+            <span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="./servicio.html">Servicios </a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="./nosotros.html">Nosotros </a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item ml-1 ">
+                    <a class="nav-link" href="./cliente.html">Clientes </a>
+                </li>
+                <li class="nav-item ml-1 mr-3">
+                    <a class="nav-link" href="./app.html">App </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--   -->
+
+    <section>
+        <div id="hero-1" class="bg_main_logo" data-stellar-background-ratio="0.5">
+            <div class="container d-flex flex-column text-white" style="min-height: 105vh;">
+                <div class="row my-auto">
+                    <div class="col-lg-10 col-md-8 col-sm-12 text-center mx-auto py-5 my-5">
+                        <img class="mb-3 rounded-circle animated fadeIn retraso-1" src="./img/logo2.jpg" width="180"
+                            height="180">
+                        <hr class="animated fadeInDown retraso-1">
+                        <h1 class="font-weight-light textoh1 animated fadeInDown retraso-1  text-center title-size">
+                            CONSULTING ARSI</h1>
+                        <hr class="animated fadeInDown retraso-1">
+                        <p class="lead  textoh1  animated fadeInDown retraso-2">Contacto</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bloque 2  -->
+
+
+    <section class="bg_contacto_a1">
+        <div class="container d-flex flex-column py-5" style="min-height: 95vh;">
+            <div class="row my-auto">
+                <div class="col-lg-5 col-md-10 col-sm-12 m-auto py-5 my-auto">
+                    <h2 class="display-4 mb-3 text-white">Envianos un mensaje </h2>
+                    <p class="lead mb-4 mr-5 text-white">Realizamos presupuestos sin costo alguno</p>
+
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 my-auto">
+                    <div class="card border-0">
+
+                        <div class="card-block pt-4 px-5 pb-1">
+                            <form class="recaptchaForm" action="enviar.php" method="POST">
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Nombre o Empresa</label>
+                                    <input type="text" name="form_name" class="form-control" id="name" placeholder="..."
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Correo electronico</label>
+                                    <input type="email" name="form_email" class="form-control" id="email"
+                                        placeholder="@" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Telefono</label>
+                                    <input type="tel" name="form_tel" class="form-control" id="phone" placeholder="#"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escriba su consulta </label>
+                                    <textarea class="form-control" name="form_msj" placeholder="Buenas ..."
+                                        id="consulta" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LcJZMMUAAAAACzJkFCIsDuqXBRGT9G4ahd9PHPz">
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-lg btn-warning mb-4 w-100 rounded-0" value="Enviar"
+                                    id="boton_enviar" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Bloque 3  -->
+    <!-- -->
+    <section class="py-5 bloque_2">
+        <div class="container pt-5 pb-4">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <h2 class="lead text-white textoh1">Contacto</h2>
+                    <ul class="text-secondary list-unstyled mb-5 font_subtile">
+                        <li>Rodrigo Huaynate </li>
+                        <li>(+51) 915-333-120</li>
+                    </ul>
+                    <h2 class="lead text-white textoh1">Redes Sociales</h2>
+                    <ul class="text-secondary list-unstyled mb-3 font_subtile">
+
+                        <li class="mb-1">
+                            <a class="btn text-secondary p-0"
+                                href="https://www.facebook.com/Consulting-ARSI-198114763883497/">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="btn text-secondary p-0"
+                                href="https://www.youtube.com/channel/UC2t0eytkilFoLsqubevOrxA">
+                                Youtube
+                            </a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="btn text-secondary p-0" href="#">
+                                Instagram
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12 font_subtile">
+
+                    <h2 class="lead text-white textoh1">Telefono </h2>
+                    <p class="text-secondary mb-5">(01) 435-2771 </p>
+                    <p class="text-secondary mb-5"> </p>
+                    <h2 class="lead text-white textoh1">Dirección</h2>
+                    <p class="text-secondary mb-5">Av. Javier Prado Este 5665 Of. 401 &nbsp;La Molina, Lima</p>
+                </div>
+
+                <div class="col-lg-6 col-md-4 col-sm-12">
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.121727284537!2d-76.96000759593005!3d-12.073041537400387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6f996648f65%3A0xb7d12faf18cec836!2sAv.%20Javier%20Prado%20Este%205665%2C%20La%20Molina%2015023!5e0!3m2!1ses-419!2spe!4v1573490771878!5m2!1ses-419!2spe"
+                            width="600" height="450" frameborder="0" style="border:2" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- -->
+    <section class="container">
+        <div class="col-lg-7 col-md-12 mx-auto py-3 text-center">
+            <p class="text-secondary">© 2019</p>
+        </div>
+    </section>
+    <script src="https://www.google.com/recaptcha/api.js"> </script>
+    <script src="./js/contacto.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".recaptchaForm").submit(function (event) {
+                var recaptcha = $("#g-recaptcha-response").val();
+
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var consulta = document.getElementById("consulta").value;
+
+                if (recaptcha === "") {
+                    event.preventDefault();
+                    alert('Falta validar el check');
+                }
+                event.preventDefault();
+                $.post("enviar.php", {
+                    "secret": "",
+                    "response": recaptcha,
+                    "form_name": name,
+                    "form_email": email,
+                    "form_tel": phone,
+                    "form_msj": consulta
+                }, function (response) {
+                    console.log(response);
+
+                    var jsonObject = $.parseJSON(response);
+
+                    var verdadero = jsonObject["success"];
+                    var challenge_ts = jsonObject["challenge_ts"];
+                    var hostname = jsonObject["hostname"];
+
+                    console.log(verdadero);
+                    console.log(challenge_ts);
+                    console.log(hostname);
+
+                    if (verdadero == true) {
+                        location.href = "https://consultingarsi.com";
+                    } else {
+                        console.log(" error");
+
+                    }
+
+
+                });
+
+            });
+        });
+    </script>
+</body>
+
+</html>
