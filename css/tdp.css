@@ -1,0 +1,6 @@
+.bg_tdp_01 {
+    background: linear-gradient(90deg, rgba(50, 196, 196, 0.12), rgba(50, 56, 56, 0.62)), url('../img/tdp1.png') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative
+}

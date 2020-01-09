@@ -1,0 +1,25 @@
+.bg_gth_servicios_01 {
+    background: linear-gradient(90deg, rgba(24, 21, 21, 0.856), rgba(20, 19, 19, 0.849)), url('../img/gth.png') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative
+}
+
+.bg_gth_servicios_02 {
+    background: linear-gradient(90deg, rgba(50, 56, 56, 0.32), rgba(50, 56, 56, 0.45)), url('../img/politica.png') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative
+}
+
+
+.gth_border_servicio{
+    margin: -1px;
+    border-radius: 25px;
+    border : solid #FFF 1px;
+    box-shadow: 0 1px 3px rgb(252, 252, 252), 0 3px 12px rgba(0,0,0,0.22);
+}
+
+.gth_border_servicio-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }

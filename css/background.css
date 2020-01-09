@@ -1,0 +1,26 @@
+.fondo_4 {
+    background: linear-gradient(to right, #e85441, #7c5290 100%);
+}
+
+
+.fondo_5 {
+    background: #e85441;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.bloque_2 {
+    background: #262F36;
+    color: #FCFFF5;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.txtSmall {
+    font-size: 18px;
+}

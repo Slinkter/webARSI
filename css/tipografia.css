@@ -1,0 +1,34 @@
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+
+.textoh1 {
+  font-family: 'Ovo', serif;
+}
+
+.TDP {
+  font-family: 'Merriweather', serif;
+
+}
+
+.font_subtile {
+  font-family: 'Playfair Display', serif;
+
+}
+
+.textop {
+  font-family: "Source Sans Pro", Helvetica, sans-serif, serif;
+}
+
+
+@media (min-width: 400px) {
+  .TDP {
+    font-size: 3.5em;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .TDP {
+    font-size: 45px;
+  }
+}

@@ -1,0 +1,11 @@
+.error {
+    font-size: 10px;
+    color: #666;
+    margin: 0 0 10px 150px;
+    display: none;
+}
+
+.bg_contacto_a1 {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.7)), url('../img/tdp3.png') center center;
+    background-size: cover;
+}
