@@ -1,16 +1,14 @@
-.fondo_4 {
-    background: linear-gradient(to right, #e85441, #7c5290 100%);
-}
-
-
-.fondo_5 {
-    background: #e85441;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
+.fondo_4 {
+    background: linear-gradient(to right, #e85441, #7c5290 100%);
+}
+
+.fondo_5 {
+    background: #e85441;
+}
 
 .bloque_2 {
     background: #262F36;

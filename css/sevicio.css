@@ -6,7 +6,6 @@
 	font-size: 11pt;
 	font-weight: 300;
 	line-height: 1.65;
-
 }
 
 @media (min-width: 400px) {
@@ -15,10 +14,8 @@
 		font-size: 11pt;
 		font-weight: 300;
 		line-height: 1.65;
-
 	}
 }
-
 
 @media (min-width: 768px) {
 	.textCarousel {
@@ -26,7 +23,6 @@
 		font-size: 11pt;
 		font-weight: 300;
 		line-height: 1.65;
-
 	}
 }
 
@@ -36,18 +32,12 @@
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
-
 	}
 }
-
-
-
 
 .container {
 	padding: 10px 15px;
 }
-
-
 
 p.content {
 	-moz-columns: 20em 2;
@@ -103,9 +93,7 @@ p.content {
 .carousel-caption h3 {
 	padding: .5em;
 	font-size: 1.25em;
-
 }
-
 
 .carousel .icon-container {
 	display: inline-block;
@@ -140,21 +128,21 @@ p.content {
 }
 
 .bg_servicio_01 {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, .2)), url('../img/gth.png') center center;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.661), rgba(0, 0, 0, .7)), url('../img/gth.png') center center;
 	background-size: cover;
 	background-attachment: fixed;
 	color: #fff;
 }
 
 .bg_servicio_02 {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0)), url('../img/sgi4.png') center center;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.338), rgba(0, 0, 0, 0.345)), url('../img/sgi2020.jpg') center center;
 	background-size: cover;
 	background-attachment: fixed;
 	color: #fff;
 }
 
 .bg_servicio_03 {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.838), rgba(0, 0, 0, 0.845)), url('../img/tdp3.png') center center;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.638), rgba(0, 0, 0, 0.745)), url('../img/tdp3.png') center center;
 	background-size: cover;
 	background-attachment: fixed;
 	color: #fff;

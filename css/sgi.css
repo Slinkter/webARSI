@@ -1,12 +1,12 @@
 .bg_sgi_proceso {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.83)),
-      url("../img/sgibooks.jpeg") center center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  .bg_sgi_ventaja {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.2)),
-      url("../img/calidad3.png") center center;
-    background-size: cover;
-  }
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.83)),
+    url("../img/sgibooks.jpeg") center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg_sgi_ventaja {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.2)),
+    url("../img/calidad3.png") center center;
+  background-size: cover;
+}
