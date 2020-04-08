@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -18,47 +22,57 @@
   <link rel="stylesheet" href="./css/nosotros.css">
   <!-- ============================================================================================================= -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <!-- ============================================================================================================= -->
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap">
+  <!-- ============================================================================================================= -->
+
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lfr-eUUAAAAAKYokhq2wxsQJJOfQ8b4syyqBtfi"></script>
+  <script>
+    grecaptcha.ready(function () {
+      grecaptcha.execute('_reCAPTCHA_site_key_', {
+        action: 'homepage'
+      }).then(function (token) {
+
+      });
+    });
+  </script>
 
 </head>
 
 <body>
-     <!-- NAV  -->
-     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <a class="navbar-brand p-0" href="index.html" target="_blank">
-            <span></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto text-center">
-                <li class="nav-item mx-1">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link" href="./servicio.html">Servicios </a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link" href="./nosotros.html">Nosotros </a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item ml-1 ">
-                    <a class="nav-link" href="./cliente.html">Clientes </a>
-                </li>
-                <li class="nav-item ml-1 mr-3">
-                    <a class="nav-link" href="./app.html">App </a>
-                </li>
-                <li class="nav-item ml-1 mr-3">
-                  <a class="nav-link" href="./patos.html">Patos </a>
-              </li>
-            </ul>
-        </div>
-    </nav>
+   <!-- NAV  -->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <a class="navbar-brand p-0" href="index.html" target="_blank">
+        <span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="./servicio.html">Servicios </a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="./nosotros.html">Nosotros </a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item ml-1 ">
+                <a class="nav-link" href="./cliente.html">Clientes </a>
+            </li>
+            <li class="nav-item ml-1 mr-3">
+                <a class="nav-link" href="./app.html">App </a>
+            </li>             
+        </ul>
+    </div>
+</nav>
 
   <!--   -->
   <section>
@@ -89,7 +103,7 @@
 
             <p class="text-white "> . </p>
             <hr style="background: #FFf;" class="my-2">
-             <p class="text-white font_subtile ">Somos una empresa con más de 10 años en el mercado, que brinda servicios
+            <p class="text-white font_subtile ">Somos una empresa con más de 10 años en el mercado, que brinda servicios
               de implementación de Sistemas Integrados de Gestión (SIG), selección, capacitación de personal, análisis
               de puesto y diagnóstico organizacional; con el firme propósito de ofrecerle servicios de alta calidad.
               Ponemos a su disposición un equipo de consultores estrictamente competentes que combina una sólida
@@ -97,7 +111,7 @@
               fortalecimiento de su empresa.</p>
             <hr style="background: #FFf;" class="my-2">
             <p class="text-white "> . </p>
-           
+
           </div>
         </div>
       </div>
@@ -105,7 +119,7 @@
   </section>
 
   <!-- Bloque 4  -->
-  <section  class="  " style="background: url('img/salaoffice.jpg') no-repeat center ; 	background-size: cover;">
+  <section class="  ">
 
 
     <div class="py-5 text-white ">
@@ -158,71 +172,71 @@
 
   </section>
 
-    <!-- Bloque Ubicacion y contacto-->
-    <section class="py-5 bloque_2">
-        <div class="container pt-1 ">
-            <div class="row pt-1">
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <h2 class="lead text-white textoh1">Contacto</h2>
-                    <ul class="text-secondary list-unstyled mb-5 font_subtile">
-                        <li>Rodrigo Huaynate </li>
-                        <li>(+51) 915-333-120</li>
-                    </ul>
-                    <h2 class="lead text-white textoh1">Redes Sociales</h2>
-                    <ul class="text-secondary list-unstyled mb-3 font_subtile">
+    <!-- Bloque Footer-->
+    <footer class="py-5 bloque_2">
+      <div class="container pt-1 ">
+          <div class="row pt-1">
+              <div class="col-lg-3 col-md-4 col-sm-12">
+                  <h2 class="lead text-white textoh1">Contacto</h2>
+                  <ul class="text-secondary list-unstyled mb-5 textoh1">
+                      <li>Rodrigo Huaynate </li>
+                      <li>(+51) 915-333-120</li>
+                  </ul>
+                  <h2 class="lead text-white  textoh1">Redes Sociales</h2>
+                  <ul class="text-secondary list-unstyled mb-3 textoh1">
 
-                        <li class="mb-1">
-                            <a class="btn text-secondary p-0"
-                                href="https://www.facebook.com/Consulting-ARSI-198114763883497/">
-                                Facebook
-                            </a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="btn text-secondary p-0"
-                                href="https://www.youtube.com/channel/UC2t0eytkilFoLsqubevOrxA">
-                                Youtube
-                            </a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="btn text-secondary p-0" href="#">
-                                Instagram
-                            </a>
-                        </li>
+                      <li class="mb-1">
+                          <a class="btn text-secondary p-0"
+                              href="https://www.facebook.com/Consulting-ARSI-198114763883497/">
+                              Facebook
+                          </a>
+                      </li>
+                      <li class="mb-1">
+                          <a class="btn text-secondary p-0"
+                              href="https://www.youtube.com/channel/UC2t0eytkilFoLsqubevOrxA">
+                              Youtube
+                          </a>
+                      </li>
+                      <li class="mb-1">
+                          <a class="btn text-secondary p-0" href="#">
+                              Instagram
+                          </a>
+                      </li>
 
-                    </ul>
-                </div>
+                  </ul>
+              </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-12 font_subtile">
+              <div class="col-lg-3 col-md-4 col-sm-12 textoh1">
+                  <h2 class="lead text-white textoh1">Telefono </h2>
+                  <p class="text-secondary mb-5">(01) 435-2771 </p>
+                  <p class="text-secondary mb-5"> </p>
+                  <h2 class="lead text-white textoh1">Dirección</h2>
+                  <p class="text-secondary mb-5">Av. Javier Prado Este 5665 Of. 401 &nbsp;La Molina, Lima</p>
+              </div>
 
-                    <h2 class="lead text-white textoh1">Telefono </h2>
-                    <p class="text-secondary mb-5">(01) 435-2771 </p>
-                    <p class="text-secondary mb-5"> </p>
-                    <h2 class="lead text-white textoh1">Dirección</h2>
-                    <p class="text-secondary mb-5">Av. Javier Prado Este 5665 Of. 401 &nbsp;La Molina, Lima</p>
-                </div>
-
-                <div class="col-lg-6 col-md-4 col-sm-12">
-                    <div class="map-responsive">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.121727284537!2d-76.96000759593005!3d-12.073041537400387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6f996648f65%3A0xb7d12faf18cec836!2sAv.%20Javier%20Prado%20Este%205665%2C%20La%20Molina%2015023!5e0!3m2!1ses-419!2spe!4v1573490771878!5m2!1ses-419!2spe"
-                            width="600" height="450" frameborder="0" style="border:2" allowfullscreen></iframe>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- -->
-    <section class="container">
-        <div class="col-lg-7 col-md-12 mx-auto py-3 text-center">
-            <p class="text-secondary">© 2020</p>
-        </div>
-    </section>
+              <div class="col-lg-6 col-md-4 col-sm-12">
+                  <div class="map-responsive">
+                      <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5745827467117!2d-76.96201938471324!3d-12.072764591449994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c746377fdc0d%3A0xacb8737418f16a94!2sConsulting%20ARSI%20E.I.R.L!5e0!3m2!1ses-419!2spe!4v1586304919429!5m2!1ses-419!2spe"
+                          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                          aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- -->
+  <section class="container">
+      <div class="col-lg-7 col-md-12 mx-auto my-2 text-center">
+          <p class="text-secondary textoh1">© 2020</p>
+      </div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"> </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+
+  
 
 </body>
 

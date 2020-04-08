@@ -1,5 +1,8 @@
 <?php
 
+define('SITE_KEY','6Lfr-eUUAAAAAKYokhq2wxsQJJOfQ8b4syyqBtfi');
+define('SECRET_KEY','6Lfr-eUUAAAAAAfzABDnn7Wk313THiRtVNqZrOsT');
+
 $form_name = $_POST["form_name"];
 $form_email = $_POST["form_email"];
 $form_tel = $_POST["form_tel"];
