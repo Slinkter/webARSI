@@ -1,6 +1,6 @@
 <?php
 
-$para = "consultingarsiapp@gmail.com";
+$para = "ro_alex@consultingarsi.com";
 $titulo    = 'Correo de Pagina Web Consulting ARSI';
 
 $form_name = $_POST["form_name"];

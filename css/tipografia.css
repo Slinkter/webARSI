@@ -1,13 +1,17 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+*{
+  font-family: 'Ovo', serif;
+}
+
 
 .textoh1 {
   font-family: 'Ovo', serif;
 }
 
+
 .TDP {
   font-family: 'Merriweather', serif;
-
 }
 
 .font_subtile {
@@ -24,11 +28,23 @@
   .TDP {
     font-size: 3.5em;
   }
+
+  .textoh2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+
+  }
 }
 
 
 @media (min-width: 768px) {
   .TDP {
     font-size: 45px;
+  }
+
+  .textoh2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+
   }
 }
