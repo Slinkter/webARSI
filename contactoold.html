@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="./img/logo.jpg" rel="icon" type="image/gif">
+    <title>Consulting ARSI</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Edition and css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fondo.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/googlemap.css">
+
+    <!-- Nuevo code -->
+    <link rel="stylesheet" href="css/stella.css">
+    <link rel="stylesheet" href="css/tipografia.css">
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script src="./js/contactoold.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Alice|Arimo|Average|Bevan|Cormorant:700|Ovo|Prata|Share|Vidaloka"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Gamja+Flower|Nanum+Myeongjo|Poiret+One"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+    <style type="text/css">
+        .error {
+            font-size: 10px;
+            color: #666;
+            margin: 0 0 10px 150px;
+            display: none;
+        }
+
+        body {
+            background: green;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+
+
+    <!-- Codigo nuevo -->
+    <section class="fondo_4">
+        <div class="pt-5 pb-2  main special" id="footer-04">
+            <div class="container ">
+                <div class="row py-5 texto7">
+                    <div class="col-md-12 col-lg-8 mx-auto py-5">
+                        <h2 class="display-4  text-center text-white ">Contáctanos</h2>
+                        <hr class=" " style="opacity: 4;">
+
+
+                        <div id="contact_form">
+
+
+                            <form method="post" onsubmit="return sendContact();" action="sendContact.php">
+
+
+                                <div class="form-group row">
+                                    <label for="name" id="lname"
+                                        class="col-sm-2 col-form-label text-white">Nombre</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            onfocus="input_focus('name');" onblur="input_blur('name');">
+                                    </div>
+                                </div>
+
+
+                                <br>
+                                <div class="form-group row">
+                                    <label for="email" id="lemail"
+                                        class="col-sm-2 col-form-label text-white texto7">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="example@email.com"
+                                            name="email" id="email" onfocus="input_focus('email');"
+                                            onblur="input_blur('email');">
+                                    </div>
+                                    <div class="x"></div>
+                                    <p class="error" id="email-error">Ingresa tu Correo.</p>
+                                </div>
+
+                                <br>
+                                <div class="form-group row">
+                                    <label for="category" id="lcategory"
+                                        class="col-sm-2 col-form-label text-white">Categoría:</label>
+                                    <div class="col-sm-10">
+                                        <select class="custom-select" name="category" id="category"
+                                            onfocus="input_focus('category');" onblur="input_blur('category');">
+                                            <option value="mineria">Capacitación Minera</option>
+                                            <option value="carro">Implementación de SIG</option>
+                                            <option value="Integrados">Elaboración Plan de Contingencia</option>
+                                            <option value="RRHH">Selección de Personal</option>
+                                            <option value="Contingencia">Capacitación </option>
+                                            <option value="Contingencia">Análisis de Puesto</option>
+                                            <option value="otros">Otros</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <br>
+                                <div class="form-group row">
+                                    <label for="message" id="lmessage"
+                                        class="col-sm-2 col-form-label text-white">Mensaje :</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" name="message" id="message"
+                                            onfocus="input_focus('message');" onblur="input_blur('message');"
+                                            rows="3"></textarea>
+                                    </div>
+                                    <div class="x"></div>
+                                    <p class="error" id="message-error">Ingresa un Mensaje.</p>
+                                </div>
+                                <br>
+
+
+                                <div class="form-group row">
+
+                                    <label for="captcha" id="lcaptcha" class="col-sm-2 col-form-label text-white">
+                                    </label>
+                                    
+                                    <div class="col-sm-10">
+                                        <input type="text" class=" text-dark" placeholder="Ingresar sumar"
+                                            name="captcha" id="captcha" onfocus="input_focus('captcha');"
+                                            onblur="input_blur('captcha');" />
+
+                                    </div>
+                                    <div class="x"></div>
+                                    <p class="error" id="captcha-error">Código con error. </p>
+                                    <script type="text/javascript">
+                                        generate_captcha('lcaptcha');
+                                    </script>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-10">
+                                        <div class="x"></div>
+                                        <input type="submit" class="submit btn btn-primary" name="send_contact"
+                                            value="Enviar" />
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/contactoold.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+
+</body>
+
+</html>

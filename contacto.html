@@ -19,10 +19,35 @@
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/animate.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
     <!-- ============================================================================================================= -->
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i">
+
+
+    <style type="text/css">
+        .error {
+            font-size: 20px;
+            color: red;
+            margin: 10px 0 10px 0;
+            display: none;
+        }
+    </style>
+
+    <style type="text/css">
+        .msn_after {
+            font-size: 20px;
+            color: white;
+            margin: auto;
+            display: none;
+        }
+    </style>
+
+
+
+    <script src="./js/contactoold.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -73,7 +98,6 @@
                         <hr class="animated fadeInDown retraso-1">
                         <p class="lead  textoh1  animated fadeInDown retraso-2">Contacto</p>
 
-
                     </div>
                 </div>
             </div>
@@ -83,44 +107,109 @@
     <section class="bg_contacto_a1">
         <div class="container d-flex flex-column py-5" style="min-height: 95vh;">
             <div class="row my-auto">
-                <div class="col-lg-5 col-md-10 col-sm-12 m-auto py-5 my-auto">
-                    <h2 class="display-4 mb-3 text-white">Envianos un mensaje </h2>
-                    <p class="lead mb-4 mr-5 text-white">Realizamos presupuestos sin costo alguno</p>
 
-                </div>
-                <div class="col-lg-5 col-md-12 col-sm-12 my-auto">
-                    <div class="card border-0">
+                <div class="col-lg-12 ">
+                    <div id="contact_form">
 
-                        <div class="card-block pt-4 px-5 pb-1">
-                            <!-- =========================   formulario  =========================   -->
-                            <form id="form" action="contacto2.php" method="POST">
 
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Nombre o Empresa</label>
-                                    <input type="text" name="form_name" class="form-control" id="name" required>
+                        <form method="post" onsubmit="return sendContact();" action="contacto.php">
+
+                            <div class="form-group row">
+                                <label for="name" id="lname" class="col-sm-2 col-form-label text-white">Nombre</label>
+                                <div class="col-sm-10">
+                                    <input required type="text" class="form-control" name="name" id="name"
+                                        onfocus="input_focus('name');" onblur="input_blur('name');">
+
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="form-group row">
+                                <label for="email" id="lemail"
+                                    class="col-sm-2 col-form-label text-white texto7">Email</label>
+                                <div class="col-sm-10">
+                                    <input required type="email" class="form-control" name="email" id="email"
+                                        onfocus="input_focus('email');" onblur="input_blur('email');">
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Email</label>
-                                    <input type="email" name="form_email" class="form-control" id="email" required>
+                            </div>
+
+                            <br>
+                            <div class="form-group row">
+                                <label for="phone" class="col-sm-2 col-form-label text-white texto7">Teléfono</label>
+                                <div class="col-sm-10">
+                                    <input required type="number" class="form-control" name="phone" id="phone"
+                                        onfocus="input_focus('phone');" onblur="input_blur('phone');">
+
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Teléfono</label>
-                                    <input type="tel" name="form_tel" class="form-control" id="phone" required>
+                            </div>
+
+                            <br>
+                            <div class="form-group row">
+                                <label for="category" id="lcategory"
+                                    class="col-sm-2 col-form-label text-white">Categoría:</label>
+                                <div class="col-sm-10">
+                                    <select class="custom-select" name="category" id="category"
+                                        onfocus="input_focus('category');" onblur="input_blur('category');">
+                                        <option value="mineria">Capacitación Minera</option>
+                                        <option value="carro">Implementación de SIG</option>
+                                        <option value="Integrados">Elaboración Plan de Contingencia</option>
+                                        <option value="RRHH">Selección de Personal</option>
+                                        <option value="Contingencia">Capacitación </option>
+                                        <option value="Contingencia">Análisis de Puesto</option>
+                                        <option value="otros">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="form-group row">
+                                <label for="message" id="lmessage" class="col-sm-2 col-form-label text-white">Mensaje
+                                    :</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" name="message" id="message"
+                                        onfocus="input_focus('message');" onblur="input_blur('message');"
+                                        rows="4"></textarea>
+                                    <div class="x"></div>
+                                    <p class="error" id="message-error">Ingresa un Mensaje.</p>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Escriba su consulta </label>
-                                    <textarea class="form-control" name="form_msj" id="consulta" rows="3"></textarea>
+                            </div>
+
+                            <br>
+                            <div class="form-group row">
+
+                                <label for="captcha" id="lcaptcha" class="col-sm-2 col-form-label text-white"> </label>
+
+                                <div class="col-sm-10">
+                                    <input type="number" class="form-control" name="captcha" id="captcha"
+                                        onfocus="input_focus('captcha');" onblur="input_blur('captcha');"
+                                        placeholder="Ingresar sumar" />
+
+                                    <div class="x"></div>
+                                    <p class="error" id="captcha-error">Suma incorrecta , vuelta a intentar. </p>
+                                    <script type="text/javascript">
+                                        generate_captcha('lcaptcha');
+                                    </script>
                                 </div>
+                            </div>
 
-                                <input class=" btn btn-lg btn-warning mb-4 w-100 rounded-0" type="submit" name="enviar"
-                                    value="Enviar">
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <div class="x"></div>
+                                    <input type="submit" class="submit btn btn-primary" name="send_contact"
+                                        value="Enviar" />
+                                </div>
+                            </div>
+                        </form>
 
-                            </form>
-                        </div>
                     </div>
+
+                    <div class="msn_after" id="message_sent">
+                        <h1>Gracias</h1>
+                    </div>
+
                 </div>
 
             </div>
@@ -182,7 +271,7 @@
             <p class="text-secondary textoh1">© 2020</p>
         </div>
     </section>
-    <script src="./js/contacto.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
