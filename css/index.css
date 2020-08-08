@@ -118,6 +118,14 @@ li:hover > ul.drop-menu li {
   position: relative;
   min-height: 100vh;
 }
+.bloque_transporte {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../img/transport.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+}
 /* ------------------------------------------------------  */
 .map-responsive {
   overflow: hidden;
