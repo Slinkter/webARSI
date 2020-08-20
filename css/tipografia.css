@@ -1,17 +1,23 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+
 *{
+  font-family: 'Playfair Display', serif;
+}
+
+.textoh1 {
   font-family: 'Ovo', serif;
+}
+
+.textoh2 {
+  font-family: 'Playfair Display', serif;
+
 }
 
 .textoh3 {
   font-family: 'Playfair Display', serif;
   font-size: 21px;
   line-height: 40.5px;
-}
-
-.textoh1 {
-  font-family: 'Ovo', serif;
 }
 
 
@@ -29,18 +35,27 @@
 }
 
 
-@media (min-width: 400px) {
+
+/* 1 */
+
+@media (min-width: 576px) {
+
   .TDP {
     font-size: 3.5em;
   }
 
   .textoh2 {
-    font-family: 'Playfair Display', serif;
+   
     font-size: 14px;
 
   }
 }
 
+.textoh3 {
+  font-size: 17px;
+  line-height: 32px;
+}
+/* 2 */
 
 @media (min-width: 768px) {
   .TDP {
@@ -51,5 +66,26 @@
     font-family: 'Playfair Display', serif;
     font-size: 44px;
 
+  }
+
+  .textoh3 {
+    font-size: 18px;
+    line-height: 40.5px;
+  }
+}
+
+/* 3 */
+@media (min-width: 992px) {
+  .textoh3 {
+    font-size: 22px;
+    line-height: 40.5px;
+  }
+}
+/* 4 */
+
+@media (min-width: 1200px) {
+  .textoh3 {
+    font-size: 22px;
+    line-height: 40.5px;
   }
 }
