@@ -32,13 +32,22 @@
 
 .dibujar_curso {
 
-
     border-radius: 25px;
     border: solid #FFF 2px;
     box-shadow: 0 1px 3px rgb(252, 252, 252), 0 3px 12px rgba(0, 0, 0, 0.22);
 }
 
 .dibujar_curso-1:hover {
-    /*   box-shadow:  0px 2px 10px #e85441d0; */
-    box-shadow: 0px 2px 20px  rgba(0, 0, 0, 0.575);
+    box-shadow: 0px 2px 10px #e85441d0;
+
+
+    /* box-shadow: 0px 2px 20px  rgba(0, 0, 0, 0.575);*/
+}
+
+.text-color-h2-orange:hover {
+    color: #e85441;
+}
+
+.text-color-h2-purple:hover {
+    color: #7c5290;
 }
