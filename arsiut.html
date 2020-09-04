@@ -8,10 +8,14 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <title>ARSI UT </title>
     <meta name="description"
-        content="Aplicativo Demo para nuevos clientes para el registro y control de personal para unidades de trabajo .">
-    <link rel="icon" href="./img/logo3.png">
+        content="Aplicativo  para el registro de temperatura, saturación de oxigeno ,pulso y prueba rápida para nuevos clientes para el registro y control de personal para unidades de trabajo .">
+
+    <meta name="keywords"
+        content="App para el registro de temperatura, saturación de oxigeno ,pulso y prueba rápida.registro de temperatura,registro de saturacion de oxigeno,registro de prueba rápida ">
+    <link rel=" icon" href="./img/logo3.png">
     <!-- ============================================================================================================= -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- ============================================================================================================= -->
     <link rel="stylesheet" href="./css/background.css">
@@ -20,9 +24,6 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/arsiunidades.css">
-
-    <link rel="stylesheet" href="./css/carousel.css">
-
     <!-- ============================================================================================================= -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <link rel="stylesheet"
@@ -79,9 +80,9 @@
                         <h2 class="text-white textoh1 "> ARSI UT </h2>
                         <hr style="background: #FFf;" class="my-2">
                         <p class="text-white "> . </p>
-                        <p class="text-white font_subtile"> Unidades de Trabajdo es un aplicativo Demo para nuevos
-                            clientes para el registro y
-                            control de personal para unidades de trabajo .
+                        <p class="text-white font_subtile"> Aplicativo movil para el registro de temperatura, saturación
+                            de oxigeno , pulso y prueba rápida para control de personal en unidades de trabajo.
+
                         </p>
 
                     </div>
@@ -97,7 +98,7 @@
             <div class="col-md-12 col-lg-12 mx-auto pt-2 pb-2 text-center">
 
                 <h2 class=" textoh1 "> Descrubre lo que puede hacer </h2>
-                <p class="font_subtile">Descarga para probar las nuevas funciones . </p>
+                <p class="font_subtile">Descarga y prueba las nuevas funciones . </p>
 
             </div>
 
@@ -189,9 +190,9 @@
         <div class="container-fluid d-flex flex-column">
             <div class="row ">
                 <!-- free  -->
-                <div class="col-lg-6 " style="background-color: rebeccapurple;">
-                    <div class="p-5 m-5">
-                        <h2 class="display-4 textoh1" style="color:#fff;">Versión Gratis</h2>
+                <div class="col-lg-6  fondo_2">
+                    <div class="p-2 m-5">
+                        <h2 class="display-4 textoh1 text-center" style="color:#fff;">Versión Gratis</h2>
                         <p class="mb-4  mr-5 font_subtile" style="color:#fff;">La App permitirá las siguientes
                             características :</p>
                         <ul class="list-unstyled mb-5" style="color:#fff;">
@@ -207,6 +208,11 @@
                                 <i class="fa fa-check" aria-hidden="true"></i>
                                 Solo puede visualizar documentos .
                             </li>
+                            <li class="mb-2">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                Solo usuario para el acceso de las funciones.
+                            </li>
+
 
 
                         </ul>
@@ -215,11 +221,11 @@
 
                 </div>
                 <!-- Pago  -->
-                <div class="col-lg-6 ">
-                    <div class="p-5 m-5">
-                        <h2 class="display-4 textoh1" style="color:#e85441;">Versión de Pago</h2>
-                        <p class="mb-4  mr-5 font_subtile" style="color:#ff220596;">Realice sin restricciones .</p>
-                        <ul class="list-unstyled mb-5" style="color:#ff220596;">
+                <div class="col-lg-6 fondo_3">
+                    <div class="p-2 m-5">
+                        <h2 class="display-4 textoh1 text-center" style="color:#fff;">Versión de Pago</h2>
+                        <p class="mb-4  mr-5 font_subtile" style="color:#fff;">Obtenga más beneficios:</p>
+                        <ul class="list-unstyled mb-5" style="color:#fff;">
                             <li class="mb-2">
                                 <i class="fa fa-check" aria-hidden="true"></i>
                                 Máximo 20 unidades de trabajo.
@@ -230,7 +236,15 @@
                             </li>
                             <li class="mb-2">
                                 <i class="fa fa-check" aria-hidden="true"></i>
-                                Visualice documentos y exporte por correo .
+                                Genere reportes de síntomas o prueba rápida y exporte por correo .
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                Visualice gráficos de temperatura,saturación de oxigeno y pulso
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                Seguimiento de temperatura,saturación de oxigeno y pulso de cada trabajador.
                             </li>
                         </ul>
                     </div>
@@ -243,23 +257,39 @@
     <section class="m-5">
         <div class="container ">
 
-            <div class="col-md-12 col-lg-12 mx-auto pt-2 pb-2 text-center">
+            <div class="col-md-12 col-lg-12 mx-auto pt-3 pb-4 text-center">
+                <h2 class=" textoh1 "> Disponible en </h2>
 
-                <h2 class=" textoh1 "> Descrubre lo que puede hacer </h2>
-                <p class="font_subtile">Descarga para probar las nuevas funciones . </p>
+                <div class="d-flex align-items-center">
+                    <a class="rounded m-auto d-block"
+                        href="https://play.google.com/store/apps/details?id=com.cudpast.apputdemo"><img
+                            src="img/googleplay.png" alt="" height="" width="250"></a>
+                </div>
 
             </div>
 
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="1000">
+                    <div class="carousel-item active" data-interval="2000">
                         <img src="./img/1ut.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item" data-interval="1000">
+                    <div class="carousel-item" data-interval="3000">
                         <img src="./img/2ut.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item" data-interval="1000">
+                    <div class="carousel-item" data-interval="3000">
                         <img src="./img/3ut.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="./img/4ut.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="./img/5ut.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="./img/6ut.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="./img/7ut.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -273,21 +303,18 @@
             </div>
 
         </div>
-
-
-
     </section>
 
-    <section>
-        <div class="pt-5 pb-2  main special">
+    <section class="fondo_1">
+        <div class=" main special">
             <div class="container ">
-                <div class="row py-5 texto7">
+                <div class="row p-1 texto7">
                     <div class="col-md-12 col-lg-8 mx-auto py-5 ">
-                        <div class="p-5 m-5">
-                            <h2 class="display-4 textoh1 text-center">Requisitos</h2>
-                            <p class="mb-4  mr-5 font_subtile text-center   "></p>
+                        <div class="p-2 m-5">
+
+                            <h2 class=" textoh1 text-center display-4 mb-4" style="color:#fff;">Requisitos</h2>
                             <div>
-                                <ol class="list-unstyled mb-5">
+                                <ol class="list-unstyled mb-1 mt-2 text-white">
                                     <li class="mb-2">
                                         <i class="fa fa-check" aria-hidden="true"></i>
                                         Disponible desde Android 5.0 (Lollipop)
@@ -299,6 +326,10 @@
                                     <li class="mb-2">
                                         <i class="fa fa-check" aria-hidden="true"></i>
                                         Una cuenta de correo electronico
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        Permisos de Almacenamiento y acceso a internet
                                     </li>
 
 
@@ -376,10 +407,10 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"> </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
 </body>
 
 </html>
