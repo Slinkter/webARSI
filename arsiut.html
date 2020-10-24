@@ -9,13 +9,11 @@
     <title>ARSI UT </title>
     <meta name="description"
         content="Aplicativo  para el registro de temperatura, saturación de oxigeno ,pulso y prueba rápida para nuevos clientes para el registro y control de personal para unidades de trabajo .">
-
     <meta name="keywords"
-        content="App para el registro de temperatura, saturación de oxigeno ,pulso y prueba rápida.registro de temperatura,registro de saturacion de oxigeno,registro de prueba rápida ">
+        content="aplicativos para registrar temperatura , registro de temperatura,registro de temperatura app  , App para el registro de temperatura, saturación de oxigeno ,pulso y prueba rápida.registro de temperatura,registro de saturacion de oxigeno,registro de prueba rápida ">
     <link rel=" icon" href="./img/logo3.png">
     <!-- ============================================================================================================= -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- ============================================================================================================= -->
     <link rel="stylesheet" href="./css/background.css">
@@ -29,9 +27,63 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i">
 
+    <script type='application/ld+json'>
+        {
+            "@context": "http://www.schema.org",
+            "@type": "ProfessionalService",
+            "name": "Consultin ARSI",
+            "url": "https://consultingarsi.com/",
+            "logo": "https://consultingarsi.com/img/logo2.jpg",
+            "image": "https://consultingarsi.com/img/logo2.jpg",
+            "description": "Consultoría en Administración de Riesgos y Servicios Integrales.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Av. Javier Prado Este 5665 Oficina 401  La Molina, Lima",
+                "addressLocality": "Lima",
+                "addressRegion": "Lima",
+                "postalCode": "15023",
+                "addressCountry": "Perú"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "915-333-120",
+                "contactType": "Rodrigo Huaynate"
+            }
+        }
+    </script>
+
 </head>
 
+
+
 <body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=install_email page_id="115000750366946" theme_color="#0084ff"
+        logged_in_greeting="hola! en que podemos ayudarte ?" logged_out_greeting="hola! en que podemos ayudarte ?">
+    </div>
+
+
 
     <!-- Nav  -->
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
@@ -97,7 +149,7 @@
 
             <div class="col-md-12 col-lg-12 mx-auto pt-2 pb-2 text-center">
 
-                <h2 class=" textoh1 display-4"> Funciones  </h2>
+                <h2 class=" textoh1 display-4"> Funciones </h2>
                 <p class="font_subtile">Descarga y prueba las nuevas funciones . </p>
 
             </div>
@@ -417,7 +469,7 @@
                     <div class="col-md-12 col-lg-8 mx-auto py-5 ">
                         <div class="p-2 m-5">
 
-                            <h2 class=" textoh1 text-center display-4 mb-4" >Beneficios</h2>
+                            <h2 class=" textoh1 text-center display-4 mb-4">Beneficios</h2>
                             <div>
                                 <ol class="list-unstyled mb-1 mt-2 ">
                                     <li class="mb-2">
@@ -430,19 +482,21 @@
                                     </li>
                                     <li class="mb-2">
                                         <i class="fa fa-check" aria-hidden="true"></i>
-                                        Lleve un control de entrada y salida de sus trabajadores en su unidad de trabajos
+                                        Lleve un control de entrada y salida de sus trabajadores en su unidad de
+                                        trabajos
                                     </li>
                                     <li class="mb-2">
                                         <i class="fa fa-check" aria-hidden="true"></i>
                                         Todas las operación desde el DNI del trabjador.
-                                    </li>                                 
+                                    </li>
                                     <li class="mb-2">
                                         <i class="fa fa-check" aria-hidden="true"></i>
                                         Obtener reportes de los signo vitales de sus trabajadores .
                                     </li>
                                     <li class="mb-2">
                                         <i class="fa fa-check" aria-hidden="true"></i>
-                                        Visualice en gráficos la temperatura, saturación de oxígeno y pulso del trabajador .
+                                        Visualice en gráficos la temperatura, saturación de oxígeno y pulso del
+                                        trabajador .
                                     </li>
 
 
@@ -521,9 +575,15 @@
         </div>
     </section>
     <!-- Optional JavaScript -->
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"> </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
 </body>
+
+
+
+
 
 </html>
