@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 
@@ -22,12 +22,12 @@ html {
 
 
 .fondo_4 {
-    background: linear-gradient(to right, #e85441, #7c5290 100%);
-    max-height: 105vh;
+  background: linear-gradient(to right, #e85441, #7c5290 100%);
+  max-height: 105vh;
 }
 
 .fondo_5 {
-    background: #e85441;
+  background: #e85441;
 }
 
 .fondo_6 {
@@ -35,97 +35,93 @@ html {
 }
 
 .bloque_2 {
-    background: #262F36;
-    color: #FCFFF5;
+  background: #262F36;
+  color: #FCFFF5;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .txtSmall {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* ------------------------------------------------------  */
 .bg_main_logo {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url("../img/foto_inicial.png") center center;
-    background-size: cover;
-  
-    background-image: no-repeat;
-    background-image: fixed;
-    background-image: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  /* ------------------------------------------------------  */
-  .bloque_mineria {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-      url("../img/m3.jpg") center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    min-height: 100vh;
-  
-    background-image: no-repeat;
-    background-image: fixed;
-    background-image: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  
-  }
-  
-  .bloque_CC {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-      url("../img/Construccion2.png") center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    min-height: 100vh;
-  
-    background-image: no-repeat;
-    background-image: fixed;
-    background-image: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  .bloque_petroleo {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-      url("../img/petroleo2.png") center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    min-height: 100vh;
-    background-image: no-repeat;
-    background-image: fixed;
-    background-image: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  .bloque_transporte {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-      url("../img/transport.jpg") center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    min-height: 100vh;
-    background-image: no-repeat;
-    background-image: fixed;
-    background-image: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../img/foto_inicial.png") center center;
+
+
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  object-fit: cover;
+
+}
+
+/* ------------------------------------------------------  */
+.bloque_mineria {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../img/m3.jpg") center center;
+
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  object-fit: cover;
+
+}
+
+.bloque_CC {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../img/Construccion2.png") center center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  object-fit: cover;
+}
+
+.bloque_petroleo {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../img/petroleo2.png") center center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  object-fit: cover;
+}
+
+.bloque_transporte {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../img/transport.jpg") center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  object-fit: cover;
+}
